@@ -1,0 +1,46 @@
+
+# Python environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Dataset files
+dataset/
+
+# CICFlowMeter build and tools
+tools/
+
+# Generated reports and captures
+reports/*
+!reports/final_model_evaluation.csv
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+# Older and experimental models
+models/random_forest_binary.pkl
+models/random_forest_binary_v2.pkl
+models/source_holdout_*.pkl
+models/source_holdout_*.csv
+models/random_forest_binary_v2_threshold.txt
+# Backup files
+*_backup.py
+
+# Temporary diagnostic tests
+tests/audit_*.py
+tests/compare_*.py
+tests/diagnose_*.py
+tests/inspect_*.py
+tests/trace_*.py
+tests/verify_*.py
+tests/investigate_*.py
