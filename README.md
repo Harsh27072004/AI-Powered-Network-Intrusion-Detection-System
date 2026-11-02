@@ -4,6 +4,10 @@ An AI-powered Network Intrusion Detection System (AI-NIDS) designed to identify 
 
 The system uses network flow statistics extracted from network traffic and applies a hybrid machine learning approach to detect suspicious activity, classify attack categories, and identify potentially anomalous flows.
 
+## Dashboard Preview
+
+![AI-NIDS Dashboard](dashboard_screenshot.png)
+
 ---
 
 ## 1. Project Overview
