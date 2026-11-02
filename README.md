@@ -8,6 +8,31 @@ The system uses network flow statistics extracted from network traffic and appli
 
 ![AI-NIDS Dashboard](dashboard_screenshot.png)
 
+
+## System Architecture
+
+The AI-NIDS system processes network traffic using CICFlowMeter,
+prepares network flow features, and applies machine learning models
+for binary detection, attack classification, and anomaly detection.
+
+```mermaid
+flowchart TD
+    A["Network Traffic"] --> B["CICFlowMeter"]
+    B --> C["Network Flow CSV"]
+    C --> D["Feature Mapping and Preprocessing"]
+    D --> E["Unified NIDS Detector"]
+    E --> F["Random Forest Binary Classifier"]
+    E --> G["Gradient Boosting Multiclass Classifier"]
+    E --> H["Isolation Forest Anomaly Detector"]
+    F --> I["Unified Detection Results"]
+    G --> I
+    H --> I
+    I --> J["Streamlit SOC Dashboard"]
+    J --> K["Threat Analytics and Detection Feed"]
+    J --> L["CSV Export and XAI"]
+```
+
+
 ---
 
 ## 1. Project Overview
