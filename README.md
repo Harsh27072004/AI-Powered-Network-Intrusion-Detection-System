@@ -6,7 +6,7 @@ The system uses network flow statistics extracted from network traffic and appli
 
 ## Dashboard Preview
 
-![AI-NIDS Dashboard](dashboard_screenshot.png)
+![AI-NIDS Dashboard](dashboard_preview.png)
 
 ## System Architecture
 
